@@ -1,0 +1,1 @@
+NOTE: Instances of `IWantToRunWhenConfigurationIsComplete` are registered in [dependency injection](/nservicebus/dependency-injection/) before instances of `INeedInitialization` are created and run.

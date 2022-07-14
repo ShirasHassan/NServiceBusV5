@@ -1,0 +1,1 @@
+Command routing can be configured via [MessageEndpointMappings](routing-extensibility.md?version=Core_5#messageendpointmappings).

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NServiceBus.Hosting.Azure" Version="7.*" />
+    <PackageReference Include="Unofficial.Microsoft.WindowsAzure.ServiceRuntime" Version="2.*" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+</Project>

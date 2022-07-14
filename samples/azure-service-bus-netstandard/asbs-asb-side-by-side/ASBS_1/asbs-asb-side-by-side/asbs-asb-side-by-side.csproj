@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NServiceBus.Azure.Transports.WindowsAzureServiceBus" Version="9.*" />
+    <PackageReference Include="NServiceBus.Transport.AzureServiceBus" Version="1.*" />
+  </ItemGroup>
+  <Target Name="ChangeAliasesOfNugetRefs" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)' == 'NServiceBus.Azure.Transports.WindowsAzureServiceBus'">
+        <Aliases>LegacyASB</Aliases>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
+</Project>

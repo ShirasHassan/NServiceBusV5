@@ -1,0 +1,5 @@
+NServiceBus, the heart of the system, is a messaging and workflow framework. It helps create distributed systems that are scalable, reliable, and easy to change. It supports various messaging patterns, encapsulates long-running business processes as [sagas](/nservicebus/sagas), and provides abstractions over several [queuing](/transports/) and [storage](/persistence/) technologies.
+
+Most queuing technologies try to guarantee 'at least once', or even 'exactly once', message delivery. They usually fall short of this promise. NServiceBus solves intermittent delivery problems by  automatically retrying messages using various strategies. If all else fails, it forwards messages to an error queue. From there, [ServiceControl](/servicecontrol/) and [ServicePulse](/serviceinsight/) expose the problems for human intervention.
+
+NServiceBus is modular in design and highly extensible. There are many options to choose from for queueing, storage, serialization, logging, and more. Many elements of the system can be replaced with custom implementations for specific scenarios.
