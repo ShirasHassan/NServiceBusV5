@@ -1,0 +1,1 @@
+A saga finder is a class that implements `IFindSagas<TSagaData>.Using<TMessage>`. The class will be detected automatically by NServiceBus at endpoint configuration time. The `FindBy` method will be invoked by NServiceBusEach time a message of type `TMessage` is received by a saga which stores its state using type `TSagaData`.

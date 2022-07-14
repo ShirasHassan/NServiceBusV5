@@ -1,0 +1,1 @@
+NOTE: `INeedInitialization` exists in both the `NServiceBus.Config` and the `NServiceBus` namespaces. `NServiceBus.Config.INeedInitialization` is marked as obsolete and will cause a compile-time error.
